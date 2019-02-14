@@ -19,7 +19,7 @@
     
     <!-- js module-->
     <js-module src="www/umeng.analytics.js" name="Analytics">
-        <merges target="Umeng" />
+        <clobbers target="Umeng" />
     </js-module>
 
     <!-- ios -->
@@ -27,7 +27,7 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Analytics">
                 <param name="ios-package" value="CDVAnalytics"/>
-                <param name="onload" value="true" />
+                <!--<param name="onload" value="true" />-->
             </feature>
         </config-file>
 
