@@ -31,7 +31,12 @@
             </feature>
         </config-file>
 
-        
+
+        <header-file src="src/ios/UMMobClick.framework/Headers/MobClick.h" />
+        <header-file src="src/ios/UMMobClick.framework/Headers/MobClickGameAnalytics.h" />
+        <header-file src="src/ios/UMMobClick.framework/Headers/MobClickSocialAnalytics.h" />
+
+
         <header-file src="src/ios/CDVAnalytics.h" />
         <source-file src="src/ios/CDVAnalytics.m" />
 
