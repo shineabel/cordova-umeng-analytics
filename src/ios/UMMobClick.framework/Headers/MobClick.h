@@ -41,7 +41,7 @@ typedef NS_ENUM (NSUInteger, eScenarioType)
 /** optional:  default: nil*/
 @property(nonatomic, copy) NSString *secret;
 /** optional:  default: "App Store"*/
-@property(nonatomic, copy) NSString *channel;
+@property(nonatomic, copy) NSString *channelId;
 /** optional:  default: YES */
 @property(nonatomic) BOOL  bCrashReportEnabled;
 /** optional:  default: BATCH */
