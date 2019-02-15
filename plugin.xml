@@ -10,8 +10,8 @@
     <description>A cordova plugin, a JS version for Umeng Analytics SDK</description>
     <license>MIT</license>
     <keywords>cordova,umeng</keywords>
-    <repo>https://github.com/pipitang/cordova-umeng-analytics.git</repo>
-    <issue>https://github.com/pipitang/cordova-umeng-analytics/issues</issue>
+    <repo>https://github.com/shineabel/cordova-umeng-analytics.git</repo>
+    <issue>https://github.com/shineabel/cordova-umeng-analytics/issues</issue>
     
     <engines>
         <engine name="cordova" version=">=3.5.0" />

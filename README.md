@@ -12,7 +12,7 @@ Cordova友盟统计插件
 
 # 安装
 
-1. 运行 ```cordova plugin add https://github.com/pipitang/cordova-umeng-analytics``` 
+1. 运行 ```cordova plugin add https://github.com/shineabel/cordova-umeng-analytics``` 
 
 2. cordova各种衍生命令行都应该支持，例如phonegap或者ionic。
 

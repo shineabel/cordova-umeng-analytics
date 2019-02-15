@@ -5,7 +5,7 @@
   "description": "A cordova plugin, a JS version for Umeng Analytics SDK",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pipitang/cordova-umeng-analytics.git"
+    "url": "git+https://github.com/shineabel/cordova-umeng-analytics.git"
   },
   "keywords": [
     "cordova",
@@ -23,7 +23,7 @@
   "author": "pipitang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pipitang/cordova-umeng-analytics/issues"
+    "url": "https://github.com/shineabel/cordova-umeng-analytics/issues"
   },
-  "homepage": "https://github.com/pipitang/cordova-umeng-analytics#readme"
+  "homepage": "https://github.com/shineabel/cordova-umeng-analytics#readme"
 }
