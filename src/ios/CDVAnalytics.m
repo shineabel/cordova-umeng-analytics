@@ -16,7 +16,7 @@
     }
 
     UMConfigInstance.appKey = [params objectForKey:@"appkey"];
-    UMConfigInstance.channelId =  [params objectForKey:@"channelId"];
+    UMConfigInstance.channel =  [params objectForKey:@"channel"];
     [MobClick startWithConfigure:UMConfigInstance];
 
     [self successWithCallbackID:command.callbackId];
