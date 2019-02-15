@@ -1,6 +1,6 @@
 #import "CDVAnalytics.h"
-#import "MobClick.h"
-#import "MobClickSocialAnalytics.h"
+#import <MobClick/MobClick.h>
+#import <MobClick/MobClickSocialAnalytics.h>
               
 @implementation CDVAnalytics
 
