@@ -1,7 +1,7 @@
 # cordova-umeng-analytics
 
 Cordova友盟统计插件
-请使用v1.0.0版本，解决了cordova iOS构建时的"UMMobClick/MobClick.h" not found错误
+请使用v1.0.0版本解决了cordova iOS构建时的"UMMobClick/MobClick.h" not found错误
 # 安装
 
 运行 ```cordova plugin add https://github.com/shineabel/cordova-umeng-analytics``` 
@@ -53,7 +53,7 @@ alert("Failed: " + reason);
 ```
 打开或关闭调试
 ```$xslt
-Umeng.Analytics.enableDebug(true, function () {
+Umeng.Analytics.setDebug(true, function () {
    alert("Success");
 }, function (reason) {
    alert("Failed: " + reason);
