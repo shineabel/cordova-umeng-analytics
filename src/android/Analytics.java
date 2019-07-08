@@ -66,27 +66,32 @@ public class Analytics extends CordovaPlugin {
     }
 
     private void enableDebug(boolean enable, CallbackContext callback) {
+        Log.d(TAG, " call enableDebug method:" + enable);
         MobclickAgent.setDebugMode(enable);
         callback.success();
     }
 
 
     private void endPage(String page, CallbackContext callback) {
+        Log.d(TAG, " end page:" + page);
         MobclickAgent.onPageEnd(page);
         callback.success();
     }
 
     private void startPage(String page, CallbackContext callback) {
+        Log.d(TAG, " start page:" + page);
         MobclickAgent.onPageStart(page);
         callback.success();
     }
 
 
     private void init(JSONObject jsonObject, CallbackContext callback) throws JSONException{
+        Log.d(TAG, " init methdo......");
         String key = jsonObject.getString("appkey");
         if (key != null && !key.isEmpty())AnalyticsConfig.setAppkey(cordova.getActivity(), key);
         String channel = jsonObject.getString("channel");
         if (channel != null && !channel.isEmpty()) AnalyticsConfig.setChannel(channel);
+        Log.d(TAG, " Init method Umeng appkey :" + key + ",channel:" + channel );
         callback.success();
     }
 
