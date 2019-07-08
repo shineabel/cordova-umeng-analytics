@@ -40,12 +40,19 @@ public class Analytics extends CordovaPlugin {
     public boolean execute(String action, JSONArray args,
                            CallbackContext callback) throws JSONException {
         Log.d(TAG, action + " is called.");
-        if (action.equals("config")) init(args.getJSONObject(0), callback);
-        else if (action.equals("startPage")) startPage(args.getString(0), callback);
-        else if (action.equals("endPage")) endPage(args.getString(0), callback);
-        else if (action.equals("setDebug")) enableDebug(args.getBoolean(0), callback);
-        else if (action.equals("logEvent")) logEvent(args.getJSONObject(0), callback);
-        else return false;
+        if (action.equals("config")) {
+            init(args.getJSONObject(0), callback);
+        } else if (action.equals("startPage")) {
+            startPage(args.getString(0), callback);
+        } else if (action.equals("endPage")) {
+            endPage(args.getString(0), callback);
+        } else if (action.equals("setDebug")) {
+            enableDebug(args.getBoolean(0), callback);
+        } else if (action.equals("logEvent")) {
+            logEvent(args.getJSONObject(0), callback);
+        } else {
+            return false;
+        }
         return true;
     }
 
@@ -86,12 +93,18 @@ public class Analytics extends CordovaPlugin {
 
 
     private void init(JSONObject jsonObject, CallbackContext callback) throws JSONException{
-        Log.d(TAG, " init methdo......");
+        Log.d(TAG, " init method......");
         String key = jsonObject.getString("appkey");
-        if (key != null && !key.isEmpty())AnalyticsConfig.setAppkey(cordova.getActivity(), key);
+        if (key != null && !key.isEmpty()){
+            AnalyticsConfig.setAppkey(cordova.getActivity(), key);
+        }
         String channel = jsonObject.getString("channel");
-        if (channel != null && !channel.isEmpty()) AnalyticsConfig.setChannel(channel);
-        Log.d(TAG, " Init method Umeng appkey :" + key + ",channel:" + channel );
+        if (channel != null && !channel.isEmpty()) {
+            AnalyticsConfig.setChannel(channel);
+        }
+        Log.d(TAG, " init method Umeng appkey :" + key );
+        Log.d(TAG, " init method Umeng channel :"  + channel );
+
         callback.success();
     }
 
