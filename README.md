@@ -1,3 +1,48 @@
+# 注意
+
+
+请使用最新版本（完全可用） https://github.com/shineabel/cordova-plugin-umeng-analytics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # cordova-umeng-analytics
 
 Cordova友盟统计插件
